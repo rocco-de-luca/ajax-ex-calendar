@@ -40,15 +40,15 @@ $(document).ready(function () {
 
             // setto variabile con il mese successivo
             var nextMonth = baseMonth.add(1, 'M');
-
+             
             // reset dati nel DOM
-            $('.month-list').html('');
-
-            // Genero nuovi parametri e li printo nel DOM
+             $('.month-list').html('');
+             $('.main-side .day-holiday').html('')
+            
+             // Genero nuovi parametri e li printo nel DOM
             printMonth(template, nextMonth)
             printHoliday(nextMonth)
         }
-
     });
 
     $('.prev').click(function () {
@@ -58,11 +58,15 @@ $(document).ready(function () {
             // setto variabile con il mese precedente
             var prevMonth = baseMonth.subtract(1, 'M');
 
+            // reset dati nel DOM
+            $('.month-list').html('');
+            $('.main-side .day-holiday').html('')
+
             // Genero nuovi parametri e li printo nel DOM
             printMonth(template, prevMonth)
             printHoliday(prevMonth)
         }
-
+        
     });
 
 }); // <-- End doc ready
