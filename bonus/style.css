@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+    width: 1000px;
+    height: 1000px;
+  
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    border: 1px solid black;
+}
+
+li.holiday {
+    color: red;
+}
+
+.prev, .next {
+    cursor: pointer;
+    padding: 8px;
+    color: #000;
+    font-size: 30px;
+    opacity: 0.7;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+.prev:hover, .next:hover{
+    color: blue;
+    border-radius: 50%;
+    border: 1px solid blue;
+}
+
+.prev a, .next a {
+    padding: 10px;
+}
+
+  .month-list{
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      
+  }
+
+  .month-list  li{
+      border:1px solid black;
+      width: 100px;
+      height: 100px;
+      padding: 8px;
+  }
